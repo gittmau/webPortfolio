@@ -47,6 +47,7 @@ li{
 	font-family:'Raleway', sans-serif;
 	text-shadow: 2px 2px 3px #fff;
 	font-size: 0.8em;
+	border:1px solid #fff;
 }
 
 .imgLogo a{
