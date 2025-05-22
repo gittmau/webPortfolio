@@ -170,16 +170,15 @@ nav{
 
 #frontEnd{
 	 font-family: "Cal Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-	font-style: bold;
-	color: #28027D;
-	font-size:1.6em;
-	opacity:1;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: animaFront 10s ease-in-out infinite alternate;
-	
+         font-weight: 400;
+         font-style: normal;
+	 font-style: bold;
+	 color: #28027D;
+	 font-size:1.6em;
+	 opacity:1;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 animation: animaFront 10s ease-in-out infinite alternate;	 
 }
 
  @keyframes animaFront{
@@ -189,6 +188,7 @@ nav{
 	  100%{
  		background-position: 400%;
  	  }
+ }	 
 
 
   #intermediaria{
