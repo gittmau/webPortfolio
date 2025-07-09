@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	margin: 0;padding: 0;
+}
+
+
+h1,h2,h3 {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+	color: #444;
+}
+
+li{
+	list-style: none;
+}
+
+#topo{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color:#504074;	
+}
+
+.logo{
+	width: 100px;	
+	background:linear-gradient(to top,#e9e0d7,#eac486);
+	font-family: "Cal Sans", sans-serif;
+	text-align: center;
+	border-radius: 0px 50px 50px 0px;
+	margin-left:20px;
+
+}
+
+.imgLogo{
+	width: 200px;
+	background: transparent;
+	cursor: pointer;
+	margin-right: 20px;
+	font-family:'Raleway', sans-serif;
+	text-shadow: 2px 2px 3px #fff;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.imgLogo a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.nomeLogo{
+	color: rgb(167, 31, 8);
+	text-transform: lowercase;	
+
+}
+
+nav{
+	position: relative;
+}
+
+
+#menu{   
+  width: 100%;
+  text-align:center;
+  background: #DBF7FB;
+  padding:20px 0;
+  position: absolute;
+  visibility:hidden ;
+}
+
+#menu a{
+	text-decoration: none;
+}
+
+#menu li{
+	padding: 10px 0;	
+	color: #444;
+	font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+#capa{
+	background:linear-gradient(to bottom,#e9e0d7,#fcf4e8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0px;
+}
+
+
+.capaImg{
+	background-image: url('face2.jpg');
+	background-position: center;
+	background-size: cover;
+	width:250px;
+	height:250px;
+	border-radius:50%;	
+}
+
+
+.conteudoCapa {
+	margin: auto;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	padding:20px 0px;
+	
+}
+
+#portfoliotext1,#portfoliotext2{
+	text-transform: uppercase;
+	font-size: 1.2em;
+	
+}
+
+#portfoliotext1{	
+	color: #333;
+}
+
+#portfoliotext2{	
+	color: #000;
+	font-weight: bold;
+}
+
+.conteudoCapa p{
+	padding: 10px;
+	color: #444;
+	font-size: 0.8em;
+}
+
+.btnZap{
+ display: block;
+ width:150px;	
+ padding:10px;
+ border: 1px solid #333;
+ border-radius: 20px;
+ margin: 20px auto;
+ color: #000;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.btnZap:hover{
+	background:#504074;
+	color: #fff;
+	transition: 0.5s;
+	border: 1px solid transparent;
+}
+
+#secao_1{		
+	padding: 5px;
+	margin: 30px auto;
+}
+
+
+.conteudoSecao_1 p{
+	font-family: "Raleway", sans-serif;
+	font-size:1em;
+}
+
+
+#frontEnd{
+	font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	font-style: bold;
+	background:linear-gradient(45deg,#7678f7,#191534,#554794,#5a40f0);	
+	background-size: 400% 100%;
+	font-size:1.6em;
+	opacity:1;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animaFront 10s ease-in-out infinite alternate;
+	
+}
+
+ @keyframes animaFront{
+ 	  0%{
+ 		background-position-x: 0%;
+ 	  }
+	  100%{
+ 		background-position: 400%;
+ 	  }
+
+ }
+
+
+  #intermediaria{
+  	width: 100%;  	
+  }
+
+  figure{
+  	font-family: "Raleway", sans-serif;
+  	font-size: 0.8em;
+  }
+
+  .imgWork{
+  	width:95%;
+  	margin: auto;
+  }
+
+
+  .imgWork img{
+  	width: 100%;
+  }
+
+
+#secao_2{
+	width:80%;
+	margin: 0px;
+	margin-bottom: 50px;	
+}	
+
+
+.conteudoSecao_2{
+	font-family: "Raleway", sans-serif;
+	width:95%;
+	margin: auto;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.conteudoSecao_2 p{
+	margin: 10px 0px;
+}
+
+#brifing{
+	font-size:2em;
+	color: #4C05FF;
+	font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	text-transform: uppercase;
+}
+
+
+#portfolio{
+	width:100%;
+	position: relative;	
+	margin-top: 100px;
+	font-family: "Raleway", sans-serif;
+	line-height: 25px;
+}
+
+#portfolio a,#autoral{
+	color: #333;	
+}
+
+
+.imgPortfolio{
+	width:90%;
+	height: 350px;		
+	margin: 50px auto;
+	border:1px solid #ddd;
+	text-align: center;
+	padding:10px 0px;
+	object-fit: cover;
+}
+
+.imgPortfolio img{
+	width: 100%;
+	max-height:300px;
+	object-fit: cover;
+
+}
+
+.btnPortfolio{
+	background: #080122;
+	padding: 5px;
+	display: block;
+	margin: auto;
+	margin-top: 20px;	
+	width:30%;
+	border-radius: 2px;
+}
+
+.btnPortfolio:hover{
+	background: #534e72;
+	color: #fff;
+}
+
+
+footer{
+  padding: 50px 0px;	
+	background-color:#f4f4f4;
+	margin-top:100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top:1px solid #ccc;
+
+}
+
+.conteudoFooter{  
+	width:30%;
+	padding: 10px 0px;
+	margin: auto;	
+	text-align: center;
+	border-radius: 50%;
+}
+
+
+.imgRedes img{
+	width: 20%;
+	margin: 0px;
+}
+
+.linksFooter{
+	background: transparent;
+}
+
+.linksFooter li{
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.7em;
+
+}
+
+.linksFooter a{
+	text-decoration: none;
+	color: #777;
+}
+
+.linksFooter a:hover{
+	color: #444;
+}
+
+
+
+.fotoFooter{
+	width:100px;
+	height:100px;
+	background-image: url('faceMauricio.jpg');
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+#tituloRedes,#tituloLinkRodape{
+	padding: 10px 0px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;	
+	color: #888;
+}
+
+
+#zapFixo{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	}
+
+#zapFixo:hover{
+	width: 55px;
+	transition: 0.4s;
+}
+
+#zapFixo img{
+	width: 100%;
+}
+
+
+#author{
+	font-family: 'Raleway',sans-serif;
+	text-align: center;
+	padding: 10px 0px;
+	box-shadow: 0px 3px 35px #ccc;
+	font-size: 0.8em;
+}
+
+
+
+@media(min-width:375px){
+
+	.conteudoSecao_1:nth-child(1){
+	font-size: 25px;
+	margin: 0px 15px;	
+  }
+
+}
+
+
+
+
+@media(min-width: 768px){
+	body{
+		background:rgb(225, 225, 225) ;
+	}
+
+	main{
+		background-color: #f4f4f4;		
+		margin: auto;
+	}
+
+
+ #capa{
+	background: transparent;
+	max-width:90%;
+	margin: auto;
+	min-height: 450px;
+	flex-direction:row;
+	align-items: center;
+	justify-content:space-between;
+	padding: 25px 0px;
+	border-bottom: 1px solid #ddd;
+  }
+
+	.conteudoCapa {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;	
+	width:350px;
+	height:350px;
+	
+	}
+
+	#secao_1{
+	width: 90%;
+	margin:50px auto;
+	border-bottom: 1px solid #ccc;		
+	}
+
+	 
+ .conteudoSecao_1:nth-child(1){
+	font-size: 45px;
+  } 
+
+  #intermediaria{
+  	width: 100%; 
+  	display: flex; 
+  	background-color: #eee;
+  }
+
+  .imgWork{
+  	width:45%;
+  	margin: auto;
+
+  }
+
+ 
+ #secao_2{
+	margin: 50px auto;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;	
+	padding: 50px 0px;
+  }	
+
+
+	.conteudoSecao_2{
+	width:45%;
+	font-size: 14px;	
+	} 
+
+
+  #brifing{
+	font-size:40px;
+  }
+
+
+#portfolio{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	margin-bottom: 50px;
+
+}
+
+.imgPortfolio{
+	width:45%;
+	
+	margin: 20px auto;
+}
+
+
+}
+
+
+@media(min-width: 1024px){
+
+	#capa{
+		width: 80%;
+		margin: auto;
+		min-height: 450px;
+		flex-direction:row;
+		align-items: center;
+		justify-content:space-between;
+		padding: 25px 0px;
+		border-bottom: 1px solid #ddd;
+	}
+	.imgPortfolio{
+	object-fit: cover;	
+	 width:45%;
+	 min-height: 400px;
+	 margin: 20px auto;
+  }
+}
+
+@media(min-width: 1280px){
+
+	#capa{
+		width: 65%;
+	}
+
+	main{
+		width:1150px;
+		margin: auto;
+		padding: 50px 0px;
+	}
+
+	.logo{
+		margin-left: 55px;
+	}
+
+	.imgLogo{
+		margin: 0px 18px;
+	}
+
+	
+	#secao_2{
+		width: 60%;		
+	}
+
+	 #brifing{
+	font-size:50px;
+  }
+
+ .conteudoSecao_2:nth-child(2){
+ 	width: 40%; 	
+ 	padding: 20px;
+ 	
+ }
+
+ #portfolio{
+	width:100%;
+ }
+
+ .imgPortfolio{
+ 	width: 45%;
+ 	height: 450px;
+ 	border: 1px solid #ccc;
+ 	background: #f4f4f4;
+ 	padding: 10px;
+ 	margin-top: 100px;
+ }
+
+ .imgRedes img{
+	width: 10%;
+	margin: 0px;
+}
+
+
+.fotoFooter{
+	width:200px;
+	height:200px;
+}
+
+.linksFooter li{
+	font-size: 1em;
+	text-transform: uppercase;
+
+}
+
+
+}
+
+
+@media(min-width: 1930px){
+	main{
+		max-width: 1920px;
+		margin: auto;
+		border: 1px solid #ddd;
+	}
+}
+
