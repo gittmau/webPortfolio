@@ -312,7 +312,7 @@ footer{
 
 
 .imgRedes img{
-	width: 45%;
+	width: 42%;
 	margin: 0px;
 }
 
@@ -323,6 +323,7 @@ footer{
 .linksFooter li{
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.9em;
+	line-height: 1.2;
 
 }
 
