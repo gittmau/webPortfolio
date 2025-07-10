@@ -93,6 +93,7 @@ nav{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding:0px 10px;
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
