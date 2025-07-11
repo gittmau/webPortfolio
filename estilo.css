@@ -399,6 +399,8 @@ footer{
 
 @media(min-width:393px){
 
+    #capa{padding:0px 20px}	
+
     .linksFooter li{font-size: .9em;}
 }	
 
