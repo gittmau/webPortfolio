@@ -103,8 +103,8 @@ nav{
 	background-image: url('face2.jpg');
 	background-position: center;
 	background-size: cover;
-	width:130px;
-	height:90px;
+	width:180px;
+	height:140px;
 	border: 1px solid #555;
 	border-radius:50%;	
 	filter: brightness(0.8);
