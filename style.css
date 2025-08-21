@@ -132,8 +132,6 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
   
   #imgBriefing{border: 20px solid #f3a744;} 
 
-
-
   .imagem-briefing {overflow: hidden;}
 
   #imgBriefing {transition: transform 0.3s ease;}
@@ -196,6 +194,8 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
 
 .itensProjetos img {
   width: 100%;
+  object-fit:cover;
+  display:block;
   transition: transform 0.5s ease;
 }
 
@@ -279,5 +279,6 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
   .itensFooter p{font-size: .8em;}
 
   
+
 
 }
