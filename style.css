@@ -183,7 +183,7 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
   
   #projetos{display: flex;justify-content: space-evenly;align-items: center;width: 100%;flex-wrap: wrap;}
 
-  .itensProjetos {width:45%;overflow: hidden;margin: 20px auto;border-radius: 2px;min-height:235px;}
+  .itensProjetos {width:45%;overflow: hidden;margin: 20px auto;border-radius: 2px;height:235px;}
 
 .itensProjetos img {width: 100%;object-fit:cover;display:block;transition: transform 0.5s ease;}
 
@@ -267,4 +267,5 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
 
 
 }
+
 
