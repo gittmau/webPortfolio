@@ -183,26 +183,11 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
   
   #projetos{display: flex;justify-content: space-evenly;align-items: center;width: 100%;flex-wrap: wrap;}
 
-  .itensProjetos{width: 45%;}
+  .itensProjetos {width:45%;overflow: hidden;margin: 20px auto;border-radius: 2px;min-height:235px;}
 
-  .itensProjetos {
-  overflow: hidden; /* corta o excesso da imagem ao dar zoom */
-   /* ou o tamanho que você quiser */
-  margin: 20px auto;
-  border-radius: 2px;
-}
+.itensProjetos img {width: 100%;object-fit:cover;display:block;transition: transform 0.5s ease;}
 
-.itensProjetos img {
-  width: 100%;
-  object-fit:cover;
-  display:block;
-  transition: transform 0.5s ease;
-}
-
-.itensProjetos:hover img {
-  transform: scale(.9);filter: brightness(80%);
- /* zoom leve */
-}
+.itensProjetos:hover img {transform: scale(.9);filter: brightness(80%); /* zoom leve */}
 
   .textItensProjetos{font-size: .9em;}
 
@@ -282,3 +267,4 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
 
 
 }
+
