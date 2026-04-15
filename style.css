@@ -259,6 +259,8 @@ footer{width: 100%;background-color: #040118;margin-top: 100px;color: #fff;paddi
 
   .itensProjetos{width: 49%;}
 
+  .itensProjetos img{height:330px;} 
+
   .textProjetos{border-bottom: 2px solid #f3a744;width: 25%;margin: auto;padding: 10px;}
 
   .itensFooter p{font-size: .8em;}
