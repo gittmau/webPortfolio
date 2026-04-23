@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+ <meta name="theme-color" content="#040118">
+    <meta name="description" content="Criação de páginas web">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Portfólio">
+<meta property="og:description" content="Desenvolvimento de páginas web e email marketing">
+<meta property="og:image" content="https://raw.githubusercontent.com/gittmau/webPortfolio/refs/heads/main/img/maudev.png"><!--Img que aparecerá no link-->
+<meta property="og:url" content="https://maudev.com.br/"><!--link do site-->
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Páginas web institucionais">
+<meta name="twitter:description" content="Criação de páginas web">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/gittmau/webPortfolio/refs/heads/main/img/maudev.png"><!--img que aparecerá no twitter-->
+<meta name="author" content="Mauricio F. Honorato dos Santos">
+<title>Portfólio</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" href="	img/shortCut.png">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#3e2e00",
+                    "primary-fixed-dim": "#00daf3",
+                    "on-primary-fixed": "#001f24",
+                    "on-background": "#dce4e5",
+                    "tertiary": "#ffeac0",
+                    "on-primary-container": "#00626e",
+                    "on-secondary-fixed": "#1b1b1c",
+                    "surface-container-low": "#151d1e",
+                    "surface-bright": "#333a3c",
+                    "tertiary-fixed-dim": "#f3bf26",
+                    "on-primary-fixed-variant": "#004f58",
+                    "tertiary-fixed": "#ffdf96",
+                    "tertiary-container": "#fec931",
+                    "surface-tint": "#00daf3",
+                    "on-tertiary-fixed-variant": "#594400",
+                    "surface-container-high": "#242b2d",
+                    "background": "#0d1516",
+                    "inverse-surface": "#dce4e5",
+                    "on-surface": "#dce4e5",
+                    "error": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "on-primary": "#00363d",
+                    "on-secondary-container": "#b7b5b4",
+                    "primary": "#c3f5ff",
+                    "primary-fixed": "#9cf0ff",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed": "#251a00",
+                    "surface": "#0d1516",
+                    "on-secondary": "#303030",
+                    "surface-container-highest": "#2e3638",
+                    "secondary-fixed": "#e5e2e1",
+                    "inverse-primary": "#006875",
+                    "on-tertiary-container": "#6f5500",
+                    "secondary-container": "#474746",
+                    "surface-dim": "#0d1516",
+                    "outline": "#849396",
+                    "inverse-on-surface": "#2a3233",
+                    "surface-container": "#192122",
+                    "secondary": "#c8c6c5",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-surface-variant": "#bac9cc",
+                    "surface-variant": "#2e3638",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-lowest": "#080f11",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "primary-container": "#00e5ff",
+                    "outline-variant": "#3b494c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "stack-lg": "32px",
+                    "unit": "4px",
+                    "stack-md": "16px",
+                    "section-padding": "120px",
+                    "gutter": "24px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "h3": ["Inter"],
+                    "caption": ["Space Grotesk"],
+                    "code": ["Space Grotesk"],
+                    "body-lg": ["Inter"],
+                    "h2": ["Inter"],
+                    "h1": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                    "caption": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        html {
+         scroll-behavior: smooth;
+         }
+
+				 
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0d1516;
+            color: #dce4e5;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 70% 30%, rgba(0, 229, 255, 0.08) 0%, transparent 50%);
+        }
+        .neon-border {
+            border: 1px solid rgba(0, 229, 255, 0.1);
+        }
+        .neon-glow:hover {
+            box-shadow: 0px 4px 20px rgba(0, 229, 255, 0.15);
+            border-color: rgba(0, 229, 255, 0.3);
+        }
+    </style>
+</head>
+
+
+
+
+
+<body class="font-body-md bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-zinc-900/90 backdrop-blur-md border-b border-white/10 shadow-none">
+<nav class="flex justify-between items-center max-w-[1200px] mx-auto px-6 h-16">
+<div class="text-xl font-bold tracking-tighter text-white">
+                MFHS
+            </div>
+<div class="hidden md:flex items-center gap-stack-lg font-inter text-sm tracking-wider uppercase">
+<a class="text-cyan-400 border-b-2 border-cyan-400 pb-1" href="#">Inicio</a>
+<a class="text-zinc-400 hover:text-white transition-colors hover:text-cyan-300 transition-all duration-300" href="#work">Trabalhos</a>
+<a class="text-zinc-400 hover:text-white transition-colors hover:text-cyan-300 transition-all duration-300" href="#servicos">Serviços</a>
+<a class="text-zinc-400 hover:text-white transition-colors hover:text-cyan-300 transition-all duration-300" href="#contato">Contato</a>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-DEFAULT font-caption text-caption hover:opacity-90 active:scale-95 transition-all">
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511995521110&amp;text=Oi Mauricio,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Contato</a>
+                </button>
+</div>
+</nav>
+</header>
+<main class="hero-gradient min-h-screen flex flex-col justify-center pt-16">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-8 py-section-padding w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Left Content Area -->
+<div class="md:col-span-7 space-y-stack-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full border border-outline-variant">
+<span class="w-2 h-2 bg-primary-container rounded-full animate-pulse"></span>
+<span class="font-caption text-caption text-primary uppercase tracking-widest">Disponível para freela</span>
+</div>
+<h1 class="font-h1 text-h1 text-on-surface max-w-2xl">
+                    Desenvolvedor de páginas Web <span class="text-primary-container"></span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Olá, me chamo Mauricio.
+Sou desenvolvedor web (front-end). Crio páginas para Web, como: Landing Page, Sites Institucionais e email-marketing. Sou formado em um curso específico de programador web e também design gráfico.
+                </p>
+<div class="flex flex-wrap items-center gap-stack-md pt-stack-sm">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-DEFAULT font-caption text-caption uppercase tracking-widest flex items-center gap-2 hover:opacity-90 transition-all active:scale-95 shadow-[0px_4px_20px_rgba(0,229,255,0.2)]">
+                        <a href="#work">Ver Projetos</a>
+                        <span class="material-symbols-outlined text-[18px]"></span>
+</button>
+<button class="border border-primary-container text-white px-8 py-4 rounded-DEFAULT font-caption text-caption uppercase tracking-widest hover:bg-primary-container/5 transition-all active:scale-95">
+                        <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511995521110&amp;text=Oi Mauricio,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Contato</a>
+                    </button>
+</div>
+<!-- Tech Stack Chips -->
+<div class="pt-stack-lg space-y-stack-md">
+<span class="font-caption text-caption text-zinc-500 uppercase">Principais tecnologias</span>
+<div class="flex flex-wrap gap-stack-sm">
+<span class="bg-surface-container-highest px-3 py-1 rounded text-zinc-400 font-code text-code">Html</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-zinc-400 font-code text-code">Css</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-zinc-400 font-code text-code">Javascript</span>
+<span class="bg-surface-container-highest px-3 py-1 rounded text-zinc-400 font-code text-code">Gimp</span>
+
+</div>
+</div>
+</div>
+<!-- Right Visual Area / Profile -->
+<div class="md:col-span-5 relative group">
+<div class="relative z-10 w-full aspect-square overflow-hidden rounded-xl bg-surface-container-low neon-border neon-glow transition-all duration-500">
+<img alt="Professional profile" class="w-full h-full object-cover grayscale contrast-125 opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Close-up portrait of a professional male developer in dark clothing against a charcoal background, soft blue rim lighting, high contrast cinematic style" src="https://raw.githubusercontent.com/gittmau/webPortfolio/refs/heads/main/img/mau2.jpg"/>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary-container/30 rounded-tr-xl"></div>
+<div class="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-primary-container/30 rounded-bl-xl"></div>
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary-container/5 blur-[100px] rounded-full"></div>
+</div>
+</section>
+<!-- Trust / Signal Section -->
+<section class="max-w-[1200px] mx-auto px-8 py-stack-lg w-full">
+<div class="border-t border-white/5 pt-stack-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-stack-lg">
+<div class="space-y-unit">
+<p class="font-h3 text-[20px] text-white">08+</p>
+<p class="font-caption text-caption text-zinc-500 uppercase">Anos de experiência</p>
+</div>
+<div class="space-y-unit">
+<p class="font-h3 text-[20px] text-white">10k</p>
+<p class="font-caption text-caption text-zinc-500 uppercase">Linhas de código</p>
+</div>
+<div class="space-y-unit">
+<p class="font-h3 text-[20px] text-white">20+</p>
+<p class="font-caption text-caption text-zinc-500 uppercase">Produção de websites</p>
+</div>
+<div class="space-y-unit">
+<p class="font-h3 text-[20px] text-white">0.9s</p>
+<p class="font-caption text-caption text-zinc-500 uppercase">Tempo médio de carregamento</p>
+</div>
+</div>
+</section>
+</main>
+
+
+<main class="max-w-[1200px] mx-auto px-6 pt-[120px] pb-section-padding" id="work">
+<!-- Header Section -->
+<div class="mb-stack-lg">
+<h1 class="font-h1 text-h1 text-white mb-stack-sm">Seleção dos meus trabalhos</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Uma coleção de soluções técnicas e experiências digitais elaboradas com precisão, com foco em desempenho, escalabilidade e arquitetura centrada no usuário.
+            </p>
+</div>
+<!-- Filter Chips (Custom component following DS) -->
+<div class="flex flex-wrap gap-stack-sm mb-stack-lg">
+<span class="px-4 py-1.5 bg-primary-container text-on-primary text-caption font-caption rounded-full">Todos os Projetos</span>
+<span class="px-4 py-1.5 bg-surface-container-highest text-on-surface-variant text-caption font-caption rounded-full hover:bg-surface-bright transition-colors cursor-pointer">Html</span>
+<span class="px-4 py-1.5 bg-surface-container-highest text-on-surface-variant text-caption font-caption rounded-full hover:bg-surface-bright transition-colors cursor-pointer">Css</span>
+<span class="px-4 py-1.5 bg-surface-container-highest text-on-surface-variant text-caption font-caption rounded-full hover:bg-surface-bright transition-colors cursor-pointer">JavaScript</span>
+<span class="px-4 py-1.5 bg-surface-container-highest text-on-surface-variant text-caption font-caption rounded-full hover:bg-surface-bright transition-colors cursor-pointer">UI/UX</span>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Project Card 1 -->
+<div class="group bg-surface-container p-unit border border-transparent rounded-lg transition-all duration-300 neon-hover hover:-translate-y-1">
+<div class="aspect-video overflow-hidden rounded-lg bg-surface-container-low mb-stack-md relative">
+<img alt="Project Interface" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="high-tech software dashboard interface with dark mode aesthetics, syntax highlighted code, and neon cyan data visualization charts" src="https://maudev.com.br/img/terezaDesktop.png"/>
+</div>
+<div class="px-stack-sm pb-stack-md">
+<div class="flex items-center gap-stack-sm mb-unit">
+<span class="text-[10px] font-mono tracking-tighter text-primary-container uppercase">Jurídicos</span>
+<span class="h-[1px] w-4 bg-outline-variant"></span>
+<span class="text-[10px] font-mono tracking-tighter text-outline uppercase">2026</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-unit">Site serviços jurídicos</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-stack-md">Serviços jurídicos especializados para empresas e pessoas físicas.</p>
+<div class="flex flex-wrap gap-2">
+
+<span class="px-2 py-0.5 bg-surface-container-highest text-outline text-[11px] rounded-DEFAULT"> <a href="https://gittmau.github.io/juridicos/" target="_blank">Visitar site</a> </span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-surface-container p-unit border border-transparent rounded-lg transition-all duration-300 neon-hover hover:-translate-y-1">
+<div class="aspect-video overflow-hidden rounded-lg bg-surface-container-low mb-stack-md relative">
+<img alt="" src="https://maudev.com.br/img/capa.png"/>
+</div>
+<div class="px-stack-sm pb-stack-md">
+<div class="flex items-center gap-stack-sm mb-unit">
+<span class="text-[10px] font-mono tracking-tighter text-primary-container uppercase">Alimentos</span>
+<span class="h-[1px] w-4 bg-outline-variant"></span>
+<span class="text-[10px] font-mono tracking-tighter text-outline uppercase">2026</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-unit">Site para Milkshake</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-stack-md">Milkshakes Cremosos e Especiais | Gagos Shake.</p>
+<div class="flex flex-wrap gap-2">
+
+<span class="px-2 py-0.5 bg-surface-container-highest text-outline text-[11px] rounded-DEFAULT"><a href="https://gittmau.github.io/gagoshake/" target="_blank"> Visitar site</a></span>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group bg-surface-container p-unit border border-transparent rounded-lg transition-all duration-300 neon-hover hover:-translate-y-1">
+<div class="aspect-video overflow-hidden rounded-lg bg-surface-container-low mb-stack-md relative">
+<img alt="Coding Interface" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="top-down view of a modern laptop on a dark desk displaying clean React code with a minimalist mechanical keyboard and warm ambient light" src="https://maudev.com.br/img/emaiPage.jpg"/>
+</div>
+<div class="px-stack-sm pb-stack-md">
+<div class="flex items-center gap-stack-sm mb-unit">
+<span class="text-[10px] font-mono tracking-tighter text-primary-container uppercase">Propaganda</span>
+<span class="h-[1px] w-4 bg-outline-variant"></span>
+<span class="text-[10px] font-mono tracking-tighter text-outline uppercase">2024</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-unit">Email - marketing</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-stack-md">Criação otmizada de site para visibilidade, e captação de novos clientes.</p>
+<div class="flex flex-wrap gap-2">
+
+<span class="px-2 py-0.5 bg-surface-container-highest text-outline text-[11px] rounded-DEFAULT"> <a href="https://gittmau.github.io/email-marketing/" target="_blank">Visitar site</a> </span>
+</div>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group bg-surface-container p-unit border border-transparent rounded-lg transition-all duration-300 neon-hover hover:-translate-y-1">
+<div class="aspect-video overflow-hidden rounded-lg bg-surface-container-low mb-stack-md relative">
+<img alt="Cyber Security" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="abstract digital security concept with flowing binary code, hexagonal patterns, and deep cyan neon glow on dark background" src="https://maudev.com.br/img/carrosPage.jpg"/>
+</div>
+<div class="px-stack-sm pb-stack-md">
+<div class="flex items-center gap-stack-sm mb-unit">
+<span class="text-[10px] font-mono tracking-tighter text-primary-container uppercase">Automóvel</span>
+<span class="h-[1px] w-4 bg-outline-variant"></span>
+<span class="text-[10px] font-mono tracking-tighter text-outline uppercase">2025</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-unit">Site para venda de carros</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-stack-md">Criação de site para loja de carros. Vendas e consignado de seminovos.</p>
+<div class="flex flex-wrap gap-2">
+
+<span class="px-2 py-0.5 bg-surface-container-highest text-outline text-[11px] rounded-DEFAULT"> <a href="https://gittmau.github.io/carros.com/" target="_blank"> visitar site </a> </span>
+</div>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="group bg-surface-container p-unit border border-transparent rounded-lg transition-all duration-300 neon-hover hover:-translate-y-1">
+<div class="aspect-video overflow-hidden rounded-lg bg-surface-container-low mb-stack-md relative">
+<img alt="Motion Design" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="fluid abstract 3D ribbons of electric blue and silver floating in a void, sharp focus, cinematic lighting" src="https://maudev.com.br/img/mockupCapa.jpg"/>
+</div>
+<div class="px-stack-sm pb-stack-md">
+<div class="flex items-center gap-stack-sm mb-unit">
+<span class="text-[10px] font-mono tracking-tighter text-primary-container uppercase">Produtos</span>
+<span class="h-[1px] w-4 bg-outline-variant"></span>
+<span class="text-[10px] font-mono tracking-tighter text-outline uppercase">2022</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-unit">Site para venda de produtos</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-stack-md">Criação otmizada de site para visibilidade, e captação de novos clientes.</p>
+<div class="flex flex-wrap gap-2">
+
+<span class="px-2 py-0.5 bg-surface-container-highest text-outline text-[11px] rounded-DEFAULT"> <a href="https://gittmau.github.io/produtos/" target="_blank">Visitar site</a> </span>
+</div>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="group bg-surface-container p-unit border border-transparent rounded-lg transition-all duration-300 neon-hover hover:-translate-y-1">
+<div class="aspect-video overflow-hidden rounded-lg bg-surface-container-low mb-stack-md relative">
+<img alt="Analytics" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="complex network graph with nodes and connections, glowing blue points on a dark grid, minimalist data science visualization" src="https://maudev.com.br/img/sergtecPage.jpg"/>
+</div>
+<div class="px-stack-sm pb-stack-md">
+<div class="flex items-center gap-stack-sm mb-unit">
+<span class="text-[10px] font-mono tracking-tighter text-primary-container uppercase">Refrigeração</span>
+<span class="h-[1px] w-4 bg-outline-variant"></span>
+<span class="text-[10px] font-mono tracking-tighter text-outline uppercase">2025</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-unit">Site para Ar condicionados</h3>
+<p class="font-caption text-caption text-on-surface-variant mb-stack-md">Criação otmizada de site para visibilidade, e captação de novos clientes.</p>
+<div class="flex flex-wrap gap-2">
+
+<span class="px-2 py-0.5 bg-surface-container-highest text-outline text-[11px] rounded-DEFAULT"> <a href="https://tecserg.com.br/" target="_blank"> Visitar site </a> </span>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="mt-section-padding text-center border border-outline-variant/30 py-16 rounded-xl bg-surface-container-lowest">
+<h2 class="font-h2 text-h2 text-white mb-stack-sm">Qual é sua dificuldade técnica hoje?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg max-w-md mx-auto">
+                
+Reconhecer essa dificuldade é o primeiro passo para superá-la. Ao identificar o problema com clareza, fica mais fácil buscar soluções.
+
+            </p>
+<button class="bg-primary-container text-on-primary px-10 py-3 font-caption text-caption uppercase tracking-[0.2em] rounded-DEFAULT hover:opacity-90 active:scale-95 transition-all">
+                <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511995521110&amp;text=Oi Mauricio,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Conversar</a>
+            </button>
+</div>
+</main>
+
+
+<main class="pt-24">
+<!-- Hero Section for Services Context -->
+<section class="max-w-[1200px] mx-auto px-6 py-[120px]">
+<div class="max-w-2xl">
+<h1 class="font-h1 text-h1 text-white mb-stack-md" >Especialização & Soluções Digitais</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Unindo precisão técnica e criatividade para criar experiências digitais de alto desempenho.</p>
+</div>
+</section>
+<!-- Section 1: Technologies -->
+<section class="bg-surface-container-lowest py-[120px] border-y border-white/5">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex items-center gap-4 mb-stack-lg">
+<div class="h-px w-12 bg-primary-container"></div>
+<span class="font-caption text-caption text-primary-container uppercase tracking-widest">Principais Habilidades</span>
+</div>
+<h2 class="font-h2 text-h2 text-white mb-stack-lg">Tecnologias</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- HTML5 -->
+<div class="group bg-surface-container flex flex-col items-center justify-center p-stack-lg rounded-lg border border-transparent hover:border-primary-container/20 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary-container transition-colors mb-stack-md">html</span>
+<span class="font-code text-code text-on-surface-variant uppercase tracking-widest">HTML5</span>
+</div>
+<!-- CSS3 -->
+<div class="group bg-surface-container flex flex-col items-center justify-center p-stack-lg rounded-lg border border-transparent hover:border-primary-container/20 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary-container transition-colors mb-stack-md">css</span>
+<span class="font-code text-code text-on-surface-variant uppercase tracking-widest">CSS3</span>
+</div>
+<!-- JavaScript -->
+<div class="group bg-surface-container flex flex-col items-center justify-center p-stack-lg rounded-lg border border-transparent hover:border-primary-container/20 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary-container transition-colors mb-stack-md">javascript</span>
+<span class="font-code text-code text-on-surface-variant uppercase tracking-widest">JavaScript</span>
+</div>
+<!-- Gimp -->
+<div class="group bg-surface-container flex flex-col items-center justify-center p-stack-lg rounded-lg border border-transparent hover:border-primary-container/20 transition-all duration-300">
+<span class="material-symbols-outlined">
+g_mobiledata_badge
+</span>
+<span class="font-code text-code text-on-surface-variant uppercase tracking-widest">Gimp</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Expertise & Services -->
+<section class="max-w-[1200px] mx-auto px-6 py-[120px]"  id="servicos">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-stack-md">
+<div class="max-w-xl">
+<div class="flex items-center gap-4 mb-stack-sm">
+<div class="h-px w-12 bg-primary-container" ></div>
+<span class="font-caption text-caption text-primary-container uppercase tracking-widest">Capacidades</span>
+</div>
+<h2 class="font-h2 text-h2 text-white">Especialização e Serviços</h2>
+</div>
+<div class="text-right">
+<p class="font-caption text-caption text-on-surface-variant">4 TIPOS DE SOLUÇÕES </p>
+</div>
+</div>
+<!-- Asymmetric Grid for Services -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Responsiveness -->
+<div class="md:col-span-7 bg-surface-container p-10 neon-glow border border-white/5 transition-all duration-500 rounded-lg group">
+<span class="material-symbols-outlined text-primary-container mb-stack-md text-3xl" style="font-variation-settings: 'FILL' 1;">devices</span>
+<h3 class="font-h3 text-h3 text-white mb-stack-sm">Responsividade</h3>
+<p class="font-body-md text-on-surface-variant mb-stack-lg max-w-md">Criação de interfaces perfeitas que se adaptam a qualquer tamanho de tela, garantindo uma experiência de usuário premium, desde dispositivos móveis até telas ultra-wide.</p>
+<div class="h-1 w-0 group-hover:w-full bg-primary-container transition-all duration-700"></div>
+</div>
+<!-- Support/Maintenance -->
+<div class="md:col-span-5 bg-surface-container p-10 neon-glow border border-white/5 transition-all duration-500 rounded-lg group">
+<span class="material-symbols-outlined text-primary-container mb-stack-md text-3xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<h3 class="font-h3 text-h3 text-white mb-stack-sm">Suporte e manutenção</h3>
+<p class="font-body-md text-on-surface-variant">Monitoramento técnico contínuo, atualizações e otimização de desempenho para manter seus sistemas funcionando com máxima eficiência 24 horas por dia, 7 dias por semana.</p>
+</div>
+<!-- Email Marketing -->
+<div class="md:col-span-5 bg-surface-container p-10 neon-glow border border-white/5 transition-all duration-500 rounded-lg group">
+<span class="material-symbols-outlined text-primary-container mb-stack-md text-3xl" style="font-variation-settings: 'FILL' 1;">alternate_email</span>
+<h3 class="font-h3 text-h3 text-white mb-stack-sm">Email Marketing</h3>
+<p class="font-body-md text-on-surface-variant">Modelos personalizados e fluxos de trabalho automatizados, concebidos para impulsionar o envolvimento e manter elevados padrões de entregabilidade.</p>
+</div>
+<!-- SEO -->
+<div class="md:col-span-7 bg-surface-container p-10 neon-glow border border-white/5 transition-all duration-500 rounded-lg group">
+<span class="material-symbols-outlined text-primary-container mb-stack-md text-3xl" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+<h3 class="font-h3 text-h3 text-white mb-stack-sm">Otimização para mecanismos de busca</h3>
+<p class="font-body-md text-on-surface-variant mb-stack-lg">Otimização estratégica na página e auditorias técnicas de SEO para aumentar sua visibilidade orgânica e superar a concorrência.</p>
+<div class="h-1 w-0 group-hover:w-full bg-primary-container transition-all duration-700"></div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-[1200px] mx-auto px-6 py-[120px]">
+<div class="relative bg-surface-container overflow-hidden p-12 md:p-20 text-center border border-white/5">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-container to-transparent"></div>
+<div class="relative z-10">
+<h2 class="font-h2 text-h2 text-white mb-stack-md">Pronto para começar um projeto?</h2>
+<p class="font-body-lg text-on-surface-variant mb-stack-lg max-w-lg mx-auto">Vamos conversar sobre como minha experiência técnica pode solucionar os desafios específicos do seu negócio.</p>
+<button class="bg-primary-container text-on-primary-fixed px-8 py-3 font-caption text-sm uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all">
+                        <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511995521110&amp;text=Oi Mauricio,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Conversar</a>
+                    </button>
+</div>
+</div>
+</section>
+</main>
+
+
+<main class="pt-32 pb-section-padding" id="contato">
+<div class="max-w-[1200px] mx-auto px-6">
+<!-- Hero Header -->
+<header class="mb-stack-lg">
+<p class="font-caption text-caption text-primary-container mb-unit tracking-widest uppercase">Disponível para Briefing</p>
+<h1 class="font-h1 text-h1 text-white max-w-2xl">Entre em contato</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-stack-md max-w-xl">
+                    Se você tem um projeto específico em mente ou apenas quer discutir as últimas novidades em arquitetura de software, meu email e telefone estarão sempre disponíveis.
+                </p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<!-- Contact Info Side -->
+<div class="md:col-span-5 space-y-10">
+<section>
+<h3 class="font-h3 text-h3 text-white mb-stack-md">Canais diretos</h3>
+<div class="space-y-stack-md">
+<a class="group flex items-center gap-4 p-4 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors border border-white/5" href="mailto:mauhonorat@gmail.com">
+<div class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<div>
+<p class="font-caption text-xs text-on-surface-variant uppercase">Email</p>
+<p class="font-code text-white">mauhonorat@gmail.com</p>
+</div>
+</a>
+<div class="group flex items-center gap-4 p-4 rounded-lg bg-surface-container border border-white/5">
+<div class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-caption text-xs text-on-surface-variant uppercase">Localização</p>
+<p class="font-code text-white">Vila Curuçá</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-h3 text-h3 text-white mb-stack-md">Redes Sociais </h3>
+<div class="flex flex-wrap gap-4">
+<a class="px-4 py-2 bg-surface-container-high rounded-full font-caption text-sm text-on-surface hover:text-primary-container transition-colors border border-white/5" href="https://github.com/gittmau" target="_blank">GITHUB</a>
+<a class="px-4 py-2 bg-surface-container-high rounded-full font-caption text-sm text-on-surface hover:text-primary-container transition-colors border border-white/5" href="https://www.linkedin.com/in/mauricio-honorato-fernandes" target="_blank">LINKEDIN</a>
+<a class="px-4 py-2 bg-surface-container-high rounded-full font-caption text-sm text-on-surface hover:text-primary-container transition-colors border border-white/5" href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511995521110&amp;text=Oi Mauricio,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">WHATSAPP</a>
+</div>
+</section>
+<!-- Abstract Visual Element -->
+<div class="hidden md:block h-32 w-full relative overflow-hidden rounded-xl border border-white/10">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 to-transparent"></div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-container/10 blur-[60px] rounded-full"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="font-code text-xs text-primary-container opacity-50">Até Já!</p>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w-full border-t border-white/10 bg-zinc-900">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-8 py-12">
+<div class="font-mono text-xs uppercase tracking-widest text-zinc-500 mb-6 md:mb-0">
+                © 2026 MAURICIO HONORATO | TODOS OS DIREITOS RESERVADOS.
+            </div>
+<div class="flex gap-stack-lg font-mono text-xs uppercase tracking-widest">
+<a class="text-zinc-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="text-zinc-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-zinc-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Whatsapp</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
+
+
+<!--
+
+<div class="md:col-span-7 bg-surface-container p-8 md:p-12 rounded-xl border border-white/5">
+<form action="#" class="space-y-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div class="space-y-2">
+<label class="font-caption text-xs uppercase text-on-surface-variant tracking-wider" for="name">Full Name</label>
+<input class="w-full bg-background border border-surface-container-highest rounded-lg px-4 py-3 text-white placeholder:text-outline/50 font-body-md form-input-focus transition-all" id="name" name="name" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-caption text-xs uppercase text-on-surface-variant tracking-wider" for="email">Email Address</label>
+<input class="w-full bg-background border border-surface-container-highest rounded-lg px-4 py-3 text-white placeholder:text-outline/50 font-body-md form-input-focus transition-all" id="email" name="email" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-caption text-xs uppercase text-on-surface-variant tracking-wider" for="subject">Subject</label>
+<select class="w-full bg-background border border-surface-container-highest rounded-lg px-4 py-3 text-white font-body-md form-input-focus transition-all" id="subject" name="subject">
+<option>New Project Inquiry</option>
+<option>Technical Consulting</option>
+<option>General Hello</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-caption text-xs uppercase text-on-surface-variant tracking-wider" for="message">Your Message</label>
+<textarea class="w-full bg-background border border-surface-container-highest rounded-lg px-4 py-3 text-white placeholder:text-outline/50 font-body-md form-input-focus transition-all resize-none" id="message" name="message" placeholder="Tell me about your vision..." rows="5"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-4 font-bold tracking-widest uppercase rounded hover:shadow-[0px_4px_20px_rgba(0,229,255,0.3)] transition-all duration-300 active:scale-[0.98]" type="submit">
+                            Send Message
+                        </button>
+</form>
+->
