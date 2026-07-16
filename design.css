@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+scroll-padding-top: 100px;
+}
+
+body{
+font-family: "Inter", sans-serif;
+background-color: var(--cor-primaria);
+color: var(--cor-secundaria);
+}
+
+:root{
+--cor-primaria:#111;
+--cor-secundaria:#fff;
+--cor-terciaria:#07dae9;
+}
+
+li{
+list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+#topo{
+width: 100%;
+background-color: var(--cor-primaria);
+border-bottom: 1px solid #222;
+position: fixed;
+top: 0;
+}
+
+
+#container_topo{
+max-width: 1440px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+}
+
+
+.itens_topo{
+margin: 0 15px;
+}
+
+.itens_topo nav{
+display: none;
+}
+
+.btn_contato{
+width: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--cor-terciaria);
+color: black;
+padding: 10px;
+text-decoration: none;
+}
+
+.btn_contato:hover{
+background-color: #65edf7;
+}
+
+#freela_disponivel{
+font-family: "Space Grotesk", sans-serif;
+width:75%;
+margin: 20px 0px;
+padding: 6px;
+display: flex;
+align-items: center;
+border: 1px solid #333;
+border-radius: 25px;
+text-transform: uppercase;
+margin-top: 100px;
+}
+
+#ponto_freela{
+display: block;
+width: 6px;
+height:6px;
+background-color: var(--cor-terciaria);
+border-radius: 50%;
+margin: 0 5px;
+}
+
+/*Sobre-----------------------------------*/
+
+#sobre{
+margin-top: 100px;
+}
+
+
+#container_sobre{
+max-width: 1440px;
+margin: auto;
+padding: 10px;
+
+}
+
+.span_tech{
+display: inline-block;
+background-color: #333;
+padding: 5px;
+margin:15px 5px;
+}
+
+.principais_tecnologias{
+text-transform: uppercase;
+padding: 0px 5px;
+color: #888;
+}
+
+.texto_sobre{
+line-height: 20px;
+letter-spacing: 2px;
+padding-top: 20px;
+color: #ccc;
+}
+
+.btn_sobre{
+width: 150px;
+text-align: center;
+margin: 10px 0px;
+margin-top: 25px;
+color: var(--cor-primaria);
+background-color: #07dae9;
+display: block;
+padding: 10px;
+}
+
+.btn_sobre_2{
+display: block;
+width:100px;
+text-align: center;
+background-color: transparent;
+color: var(--cor-secundaria);
+border: 1px solid var(--cor-terciaria);
+margin-bottom: 10px;
+padding: 10px;
+}
+
+.itens_sobre img{
+width:100%;
+display: block;
+margin: 20px auto;
+border-radius: 5px;
+}
+
+#divisao_borda{
+margin: 50px auto;
+max-width: 95%;
+height:1px;
+border-bottom: 1px solid #333;
+}
+
+/*Estatisticas------------------------------*/
+
+
+#container_estatisticas{
+max-width: 1440px;
+margin: 50px auto;
+padding: 5px 10px;
+}
+
+.itens_estatisticas{
+margin-top: 50px;
+}
+
+.span_estatisticas{
+display: block;
+margin-bottom: 10px;
+font-size: 1.5em;
+}
+
+.texto_estatisticas{
+color: #888;
+}
+
+/*Trabalhos------------------------*/
+
+
+.span_topicos_trabalhos{
+display: inline-block;
+background-color: #333;
+color: #fff;
+border-radius: 25px;
+padding: 3px 25px;
+margin:5px 0px;
+}
+
+#trabalhos_titulo{
+max-width: 1440px;
+margin: auto;
+padding: 10px;
+}
+
+.titulo_trabalhos{
+margin: 15px 0px;
+padding: 10px 0px;
+font-size: 3em;
+}
+
+.texto_trabalhos{
+margin-bottom: 15px;
+color: #ccc;
+}
+
+
+/*Cards Trabalhos------------*/
+
+#container_trabalhos{
+max-width: 1440px;
+margin: auto;
+padding: 10px;
+}
+
+.span_card{
+display: flex;
+color: #07dae9;
+font-size: .8em;
+}
+
+.card_trabalhos{
+background-color: #222;
+color: #ccc;
+padding: 10px;
+line-height: 25px;
+margin: 25px 0px;
+object-fit: cover;
+min-height: 420px;
+border: 1px solid #444;
+}
+
+.titulo-card{
+color: #fff;
+}
+
+.card_trabalhos img{
+width: 100%;
+aspect-ratio: 18/10; /* ou 4/3, 1/1 etc. */
+object-fit: cover;
+}
+
+
+.btn_visitar{
+display: inline-block;
+background-color: #555;
+color: #ccc;
+padding:0px 5px;
+margin: 10px 0px;
+margin-top: 20px;
+font-size: .8em;
+}
+
+.btn_visitar:hover{
+background-color: #07dae9;
+color: #111;
+}
+
+#container_dificul_tecnica, #container_projeto{
+padding: 20px;
+max-width: 1440px;
+margin: 100px auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.titulo_dificuldade_tecnica, .titulo_projeto{
+font-size: 1.5em;
+}
+
+.texto_dificuldade, .texto_projeto{
+margin:15px auto;
+color: #ccc;
+}
+
+.btn_conversar{
+background-color: var(--cor-terciaria);
+color: #111;
+display: inline-block;
+padding: 10px 25px;
+font-family: "Space Grotesk", sans-serif;
+text-transform: uppercase;
+margin-top: 25px;
+}
+
+#container_especializacao{
+max-width: 1440px;
+margin: 100px auto;
+padding: 10px;
+}
+
+.texto_especializacao{
+color: #ccc;
+margin-top: 15px;
+}
+
+
+#habilidades{
+background-color: #000;
+padding: 50px 0px;
+}
+
+
+
+#container_habilidades{
+max-width: 1440px;
+margin: auto;
+padding: 10px;
+}
+
+.container_box_tecnologias{
+max-width: 1600px;
+margin: auto;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+padding: 0px;
+}
+
+.box_tecnologias{
+background-color: #222;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top:15px;
+width: 45%;
+padding: 25px 0px;
+font-family: "Space Grotesk", sans-serif;
+}
+
+.span_tecno{
+margin: 10px 0px;
+}
+
+#capacidades{
+
+margin-top: 100px;
+}
+
+#container_capacidades{
+max-width: 1440px;
+margin: auto;
+padding: 10px;
+}
+
+.box_capacidade{
+background-color: #222;
+width: 100%;
+border: 1px solid #333;
+margin-bottom:25px ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 20px 10px;
+border-radius: 3px;
+}
+
+.box_capacidade:hover{
+border: 1px solid #07dae9;
+}
+
+.span_capacidades{
+display: block;
+width:25px;
+height: 25px;
+margin-bottom: 10px;
+}
+
+.span_capacidades img{
+width: 100%;
+}
+
+.texto_capacidades{
+color: #ccc;
+margin-top: 10px;
+line-height: 25px;
+}
+
+.box_contato {
+  display: flex;
+  align-items: center; 
+  gap: 10px; /* espaço entre a imagem e o texto */
+}
+
+.box_contato .info {
+  display: flex;
+  flex-direction: column; /* empilha o span e o link */
+	color:#ccc;
+}
+
+
+.titulo-contato{
+margin-top:15px;
+font-size:35px;
+}
+
+.box_contato{
+background-color:#222;
+margin:10px 0px;
+padding:10px;
+max-width:450px;
+border: 1px solid #333;
+border-radius:5px;
+}
+
+.texto_contato{
+line-height:25px;
+margin:10px 0px;
+}
+
+.canais{
+margin:20px 0px;
+}
+
+
+.link_social{
+background-color:#222;
+border: 1px solid #333;
+border-radius:5px;
+padding:5px;
+max-width:100px;
+color:#ccc;
+font-size:.8em;
+}
+
+.link_social:hover{
+background-color:cyan;
+color:#000;
+}
+
+footer{
+background-color:#222;
+margin-top:100px;
+border-top: 1px solid #444;
+padding:45px 10px;
+text-align:center;
+font-size: .8em;
+color: #ccc;
+}
+
+.container_footer{
+max-width:1440px;
+margin: auto;
+}
+
+.itens_footer{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+margin-top:25px;
+}
+
+.itens_footer a{
+color:#ccc;
+}
+
+.texto_copy{
+font-size:.9em;
+}
+
+
+
+
+@media(min-width:768px){
+
+.span_logo{
+font-weight: 900;
+font-size: 1.5em;
+}
+
+#container_sobre{
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.itens_sobre{
+width: 45%;
+}
+
+#botoes_hero{
+display: flex;
+align-items: center;
+}
+
+
+.btn_sobre_2{
+margin: 10px;
+margin-top: 25px;
+padding: 9px;
+}
+
+
+.span_tech{
+padding: 5px;
+margin:15px 5px;
+}
+
+#container_estatisticas{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.itens_estatisticas{
+margin: 0;
+}
+
+/*Cards Trabalhos*/
+
+#container_trabalhos{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+
+.card_trabalhos{
+width:48%;
+}
+
+.card_trabalhos img{ 
+aspect-ratio: 16/9; /* ou 4/3, 1/1 etc. */
+object-fit: cover;
+}
+
+.box_tecnologias{
+width: 20%;
+}
+
+#container_capacidades{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+gap:20px;
+}
+
+.box_capacidade{
+width: 45%;
+min-height: 300px;
+object-fit: cover;
+padding: 0px 20px;
+}
+
+.box_capacidade_grande{
+flex-grow: 2;
+}
+
+
+
+
+}
+
+@media(min-width:1024px){
+
+.itens_topo nav{
+display: block;
+}
+
+.itens_topo nav ul{
+display: flex;
+}
+
+.itens_topo nav ul li{
+margin: 0px 15px;
+color: #999;
+text-transform: uppercase;
+font-size: .9em;
+}
+
+.itens_topo nav ul li:hover{
+color:#fff;
+transition: all .5s;
+}
+
+
+#freela_disponivel{
+width:55%;
+}
+
+.span_tech:hover{
+background-color: var(--cor-terciaria);
+color: var(--cor-primaria);
+cursor: default;
+}
+
+
+.titulo_sobre{
+font-size: 3em;
+}
+
+
+.itens_sobre img{
+width:85%;
+height: 500px;
+object-fit:cover;
+}
+
+.btn_sobre{
+border: 1px solid transparent;
+}
+
+.btn_sobre:hover, .btn_sobre_2:hover, .btn_conversar:hover {
+background-color: transparent;
+color: var(--cor-secundaria);
+border: 1px solid var(--cor-secundaria);
+transition: all 0.5s;
+}
+
+.btn_sobre_2:hover{
+background-color: var(--cor-secundaria);
+color: var(--cor-primaria);
+border: transparent;
+}
+
+.btn_conversar{
+border: 1px solid transparent;
+}
+
+.titulo_trabalhos{
+font-size: 3em;
+}
+
+.texto_trabalhos{
+width: 50%;
+}
+
+.card_trabalhos{
+width:31%;
+}
+
+#container_dificul_tecnica{
+background-color: #000;
+padding: 50px;
+}
+
+.titulo_dificuldade_tecnica{
+font-size: 2.5em;
+}
+
+
+.texto_dificuldade{
+width: 65%;
+}
+
+#habilidades{
+padding: 100px 0px;
+}
+
+.box_tecnologias{
+padding: 50px 0px;
+}
+
+#container_projeto{
+background-color: #222;
+padding: 50px;
+}
+
+.titulo_projeto{
+font-size: 2.5em;
+}
+
+.texto_projeto{
+width: 50%;
+}
+
+.titulo-contato{
+font-size:45px;
+}
+
+.texto_contato{
+color:#fff;
+max-width:45%;
+}
+
+
+.container_footer{
+display:flex;
+justify-content:space-between;
+align-items:start;
+}
+
+.itens_footer{
+margin-top:0px;
+}
+
+.itens_footer a:hover{
+color:#fff;
+}
+
+
+}
+
+
+@media(min-width:1280px){
+
+.itens_sobre img{
+width:80%;
+height:550px ;
+}
+
+#freela_disponivel{
+width:45%;
+}
+
+.texto_dificuldade{
+width: 30%;
+}
+
+.texto_capacidades{
+width: 80%;
+
+}
+
+}
